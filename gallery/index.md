@@ -3,8 +3,15 @@ layout: default
 title: Gallery
 ---
 
-{% include figure.html path="/images/all-in.jpg" title="bla bla"  %}
-{% include figure.html path=/images/berdonces2023.png" title="ble ble"  %}
-{% include figure.html path="/images/Magnetic.jpeg" title="bli bli"  %}
-{% include figure.html path="/images/pihole.png" title="blo blo"  %}
-{% include figure.html path="/images/sigma.png" title="ddddd"  %}
+
+<div class="Gallery">
+  <h1></h1>
+  <p>Want to modulate sound with DNA? Check out gene.expressionz on <a href="https://www.instagram.com/p/Csmvu3WvCS9/?igsh=MzRlODBiNWFlZA%3D%3D">Instagram</a> - my collaboration with <a href="https://lostchocolatelab.com/">Lost Chocolate Lab</a> and <a href="https://pedalbrainz.com/">Pedal Brainz</a></p>
+  <p style="text-align:center;"><img src=""/images/all-in.jpg" width="427" height="312" class="center">
+  <p style="text-align:center;"><img src="/images/magnetic.jpeg" width="512" height="512" class="center">
+  <p style="text-align:center;"><img src="/images/pihole.png" width="512" height="512" class="center">
+  <p> </p>
+  <br>
+  <p> </p>
+    </ul>
+</div>
