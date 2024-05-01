@@ -3,64 +3,77 @@ layout: default
 title: Gallery
 ---
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="heading-text">Responsive <span>image gallery</span></h2>
-      <ul class="image-gallery">
-        <li>
-          <img src="https://source.unsplash.com/VWcPlbHglYc" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/e6FMMambeO4" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/klCiPmzUw0Y" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/IdNOTjPeHrE" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/O0N9MF--hK4" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/FV3GConVSss" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/0ESjL-Nw22Y" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/KTVn62x6fFw" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        <li>
-          <img src="https://source.unsplash.com/VSeVhmW4_JQ" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/07aFaTf24Kg" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/DqyYTM7pR2o" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-      </ul>
-    </div>
-  </body>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Gallery</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <img src="/images/all-in.jpg" style="width:100%">
+    <img src="/images/alejandro2023.pn" style="width:100%">
+    <img src="/images/antracenedefect.jpg" style="width:100%">
+    <img src="/images/berdonces2023.jpg" style="width:100%">
+    <img src="/images/dopants.jpg" style="width:100%">
+    <img src="/images/hematite2023.jpg" style="width:100%">
+    <img src="/images/sigma.pn" style="width:100%">
+  </div>
+
+</div>
+
+</body>
 </html>
